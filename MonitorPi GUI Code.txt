@@ -1,0 +1,1047 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'mainwindow.ui'
+#
+# Created by: PyQt5 UI code generator 5.5.1
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(790, 460)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(MainWindow.sizePolicy().hasHeightForWidth())
+        MainWindow.setSizePolicy(sizePolicy)
+        MainWindow.setMaximumSize(QtCore.QSize(1776, 16777215))
+        self.centralWidget = QtWidgets.QWidget(MainWindow)
+        self.centralWidget.setObjectName("centralWidget")
+        self.tabset = QtWidgets.QTabWidget(self.centralWidget)
+        self.tabset.setGeometry(QtCore.QRect(0, 19, 790, 391))
+        self.tabset.setMinimumSize(QtCore.QSize(320, 180))
+        self.tabset.setMaximumSize(QtCore.QSize(1776, 980))
+        font = QtGui.QFont()
+        font.setPointSize(11)
+        self.tabset.setFont(font)
+        self.tabset.setObjectName("tabset")
+        self.tabdataview = QtWidgets.QWidget()
+        self.tabdataview.setFocusPolicy(QtCore.Qt.TabFocus)
+        self.tabdataview.setAutoFillBackground(True)
+        self.tabdataview.setObjectName("tabdataview")
+        self.textpackets = QtWidgets.QTextEdit(self.tabdataview)
+        self.textpackets.setGeometry(QtCore.QRect(5, 0, 780, 390))
+        self.textpackets.setMaximumSize(QtCore.QSize(1776, 16777215))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.textpackets.setFont(font)
+        self.textpackets.setLineWidth(2)
+        self.textpackets.setHorizontalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOff)
+        self.textpackets.setTextInteractionFlags(QtCore.Qt.TextSelectableByKeyboard|QtCore.Qt.TextSelectableByMouse)
+        self.textpackets.setObjectName("textpackets")
+        self.tabset.addTab(self.tabdataview, "")
+        self.tabprotocol = QtWidgets.QWidget()
+        self.tabprotocol.setObjectName("tabprotocol")
+        self.tableprotocol = QtWidgets.QTableWidget(self.tabprotocol)
+        self.tableprotocol.setEnabled(True)
+        self.tableprotocol.setGeometry(QtCore.QRect(75, 20, 641, 301))
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(1)
+        sizePolicy.setVerticalStretch(1)
+        sizePolicy.setHeightForWidth(self.tableprotocol.sizePolicy().hasHeightForWidth())
+        self.tableprotocol.setSizePolicy(sizePolicy)
+        self.tableprotocol.setMinimumSize(QtCore.QSize(500, 300))
+        self.tableprotocol.setMaximumSize(QtCore.QSize(1776, 412))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.tableprotocol.setFont(font)
+        self.tableprotocol.setAcceptDrops(False)
+        self.tableprotocol.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.tableprotocol.setLineWidth(2)
+        self.tableprotocol.setVerticalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOff)
+        self.tableprotocol.setHorizontalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOff)
+        self.tableprotocol.setSizeAdjustPolicy(QtWidgets.QAbstractScrollArea.AdjustToContentsOnFirstShow)
+        self.tableprotocol.setAutoScroll(False)
+        self.tableprotocol.setEditTriggers(QtWidgets.QAbstractItemView.NoEditTriggers)
+        self.tableprotocol.setTabKeyNavigation(False)
+        self.tableprotocol.setProperty("showDropIndicator", False)
+        self.tableprotocol.setDragDropOverwriteMode(False)
+        self.tableprotocol.setSelectionMode(QtWidgets.QAbstractItemView.NoSelection)
+        self.tableprotocol.setVerticalScrollMode(QtWidgets.QAbstractItemView.ScrollPerItem)
+        self.tableprotocol.setGridStyle(QtCore.Qt.SolidLine)
+        self.tableprotocol.setWordWrap(False)
+        self.tableprotocol.setCornerButtonEnabled(False)
+        self.tableprotocol.setObjectName("tableprotocol")
+        self.tableprotocol.setColumnCount(2)
+        self.tableprotocol.setRowCount(9)
+        item = QtWidgets.QTableWidgetItem()
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        font.setBold(False)
+        font.setWeight(50)
+        item.setFont(font)
+        brush = QtGui.QBrush(QtGui.QColor(216, 24, 143))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        item.setForeground(brush)
+        self.tableprotocol.setVerticalHeaderItem(0, item)
+        item = QtWidgets.QTableWidgetItem()
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        item.setFont(font)
+        brush = QtGui.QBrush(QtGui.QColor(157, 25, 241))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        item.setForeground(brush)
+        self.tableprotocol.setVerticalHeaderItem(1, item)
+        item = QtWidgets.QTableWidgetItem()
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        item.setFont(font)
+        brush = QtGui.QBrush(QtGui.QColor(24, 24, 234))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        item.setForeground(brush)
+        self.tableprotocol.setVerticalHeaderItem(2, item)
+        item = QtWidgets.QTableWidgetItem()
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        item.setFont(font)
+        brush = QtGui.QBrush(QtGui.QColor(23, 113, 229))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        item.setForeground(brush)
+        self.tableprotocol.setVerticalHeaderItem(3, item)
+        item = QtWidgets.QTableWidgetItem()
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        item.setFont(font)
+        brush = QtGui.QBrush(QtGui.QColor(26, 191, 138))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        item.setForeground(brush)
+        self.tableprotocol.setVerticalHeaderItem(4, item)
+        item = QtWidgets.QTableWidgetItem()
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        item.setFont(font)
+        brush = QtGui.QBrush(QtGui.QColor(56, 226, 28))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        item.setForeground(brush)
+        self.tableprotocol.setVerticalHeaderItem(5, item)
+        item = QtWidgets.QTableWidgetItem()
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        item.setFont(font)
+        brush = QtGui.QBrush(QtGui.QColor(233, 171, 37))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        item.setForeground(brush)
+        self.tableprotocol.setVerticalHeaderItem(6, item)
+        item = QtWidgets.QTableWidgetItem()
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        item.setFont(font)
+        brush = QtGui.QBrush(QtGui.QColor(202, 77, 23))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        item.setForeground(brush)
+        self.tableprotocol.setVerticalHeaderItem(7, item)
+        item = QtWidgets.QTableWidgetItem()
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        font.setBold(True)
+        font.setWeight(75)
+        item.setFont(font)
+        brush = QtGui.QBrush(QtGui.QColor(230, 17, 17))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        item.setForeground(brush)
+        self.tableprotocol.setVerticalHeaderItem(8, item)
+        item = QtWidgets.QTableWidgetItem()
+        item.setText("PPS")
+        item.setTextAlignment(QtCore.Qt.AlignCenter)
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        font.setBold(True)
+        font.setWeight(75)
+        item.setFont(font)
+        item.setBackground(QtGui.QColor(255, 255, 255))
+        brush = QtGui.QBrush(QtGui.QColor(223, 16, 111))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        item.setForeground(brush)
+        self.tableprotocol.setHorizontalHeaderItem(0, item)
+        item = QtWidgets.QTableWidgetItem()
+        item.setTextAlignment(QtCore.Qt.AlignCenter)
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        font.setBold(True)
+        font.setWeight(75)
+        item.setFont(font)
+        item.setBackground(QtGui.QColor(255, 255, 255))
+        brush = QtGui.QBrush(QtGui.QColor(223, 16, 111))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        item.setForeground(brush)
+        self.tableprotocol.setHorizontalHeaderItem(1, item)
+        item = QtWidgets.QTableWidgetItem()
+        brush = QtGui.QBrush(QtGui.QColor(216, 31, 159))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        item.setForeground(brush)
+        self.tableprotocol.setItem(0, 0, item)
+        item = QtWidgets.QTableWidgetItem()
+        brush = QtGui.QBrush(QtGui.QColor(216, 24, 143))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        item.setForeground(brush)
+        self.tableprotocol.setItem(0, 1, item)
+        item = QtWidgets.QTableWidgetItem()
+        item.setTextAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignVCenter)
+        brush = QtGui.QBrush(QtGui.QColor(215, 24, 142))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        item.setForeground(brush)
+        self.tableprotocol.setItem(1, 0, item)
+        item = QtWidgets.QTableWidgetItem()
+        brush = QtGui.QBrush(QtGui.QColor(215, 24, 142))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        item.setForeground(brush)
+        self.tableprotocol.setItem(1, 1, item)
+        item = QtWidgets.QTableWidgetItem()
+        brush = QtGui.QBrush(QtGui.QColor(24, 24, 234))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        item.setForeground(brush)
+        self.tableprotocol.setItem(2, 0, item)
+        item = QtWidgets.QTableWidgetItem()
+        brush = QtGui.QBrush(QtGui.QColor(24, 24, 234))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        item.setForeground(brush)
+        self.tableprotocol.setItem(2, 1, item)
+        item = QtWidgets.QTableWidgetItem()
+        brush = QtGui.QBrush(QtGui.QColor(23, 117, 231))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        item.setForeground(brush)
+        self.tableprotocol.setItem(3, 0, item)
+        item = QtWidgets.QTableWidgetItem()
+        brush = QtGui.QBrush(QtGui.QColor(25, 109, 221))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        item.setForeground(brush)
+        self.tableprotocol.setItem(3, 1, item)
+        item = QtWidgets.QTableWidgetItem()
+        brush = QtGui.QBrush(QtGui.QColor(26, 191, 138))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        item.setForeground(brush)
+        self.tableprotocol.setItem(4, 0, item)
+        item = QtWidgets.QTableWidgetItem()
+        brush = QtGui.QBrush(QtGui.QColor(26, 190, 137))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        item.setForeground(brush)
+        self.tableprotocol.setItem(4, 1, item)
+        item = QtWidgets.QTableWidgetItem()
+        brush = QtGui.QBrush(QtGui.QColor(56, 226, 28))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        item.setForeground(brush)
+        self.tableprotocol.setItem(5, 0, item)
+        item = QtWidgets.QTableWidgetItem()
+        brush = QtGui.QBrush(QtGui.QColor(100, 229, 125))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        item.setForeground(brush)
+        self.tableprotocol.setItem(5, 1, item)
+        item = QtWidgets.QTableWidgetItem()
+        brush = QtGui.QBrush(QtGui.QColor(238, 178, 39))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        item.setForeground(brush)
+        self.tableprotocol.setItem(6, 0, item)
+        item = QtWidgets.QTableWidgetItem()
+        brush = QtGui.QBrush(QtGui.QColor(235, 173, 37))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        item.setForeground(brush)
+        self.tableprotocol.setItem(6, 1, item)
+        item = QtWidgets.QTableWidgetItem()
+        brush = QtGui.QBrush(QtGui.QColor(222, 106, 33))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        item.setForeground(brush)
+        self.tableprotocol.setItem(7, 0, item)
+        item = QtWidgets.QTableWidgetItem()
+        brush = QtGui.QBrush(QtGui.QColor(235, 117, 36))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        item.setForeground(brush)
+        self.tableprotocol.setItem(7, 1, item)
+        item = QtWidgets.QTableWidgetItem()
+        brush = QtGui.QBrush(QtGui.QColor(230, 24, 52))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        item.setForeground(brush)
+        self.tableprotocol.setItem(8, 0, item)
+        item = QtWidgets.QTableWidgetItem()
+        brush = QtGui.QBrush(QtGui.QColor(230, 24, 52))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        item.setForeground(brush)
+        self.tableprotocol.setItem(8, 1, item)
+        self.tableprotocol.horizontalHeader().setDefaultSectionSize(100)
+        self.tableprotocol.horizontalHeader().setMinimumSectionSize(100)
+        self.tableprotocol.horizontalHeader().setStretchLastSection(True)
+        self.tableprotocol.verticalHeader().setStretchLastSection(True)
+        self.tabset.addTab(self.tabprotocol, "")
+        self.tabmaclist = QtWidgets.QWidget()
+        self.tabmaclist.setObjectName("tabmaclist")
+        self.textmac = QtWidgets.QTextEdit(self.tabmaclist)
+        self.textmac.setGeometry(QtCore.QRect(0, 0, 790, 380))
+        self.textmac.setMaximumSize(QtCore.QSize(1776, 16777215))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.textmac.setFont(font)
+        self.textmac.setLineWidth(2)
+        self.textmac.setHorizontalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOff)
+        self.textmac.setTextInteractionFlags(QtCore.Qt.TextSelectableByKeyboard|QtCore.Qt.TextSelectableByMouse)
+        self.textmac.setObjectName("textmac")
+        self.tabset.addTab(self.tabmaclist, "")
+        self.taboptions = QtWidgets.QWidget()
+        self.taboptions.setObjectName("taboptions")
+        self.labeloptions1 = QtWidgets.QLabel(self.taboptions)
+        self.labeloptions1.setGeometry(QtCore.QRect(110, 170, 531, 151))
+        font = QtGui.QFont()
+        font.setPointSize(8)
+        self.labeloptions1.setFont(font)
+        self.labeloptions1.setTextFormat(QtCore.Qt.AutoText)
+        self.labeloptions1.setAlignment(QtCore.Qt.AlignCenter)
+        self.labeloptions1.setObjectName("labeloptions1")
+        self.saveprotocol = QtWidgets.QPushButton(self.taboptions)
+        self.saveprotocol.setGeometry(QtCore.QRect(480, 100, 150, 30))
+        self.saveprotocol.setMaximumSize(QtCore.QSize(200, 40))
+        self.saveprotocol.setToolTip("")
+        self.saveprotocol.setObjectName("saveprotocol")
+        self.savemac = QtWidgets.QPushButton(self.taboptions)
+        self.savemac.setGeometry(QtCore.QRect(440, 50, 191, 30))
+        self.savemac.setMaximumSize(QtCore.QSize(200, 40))
+        self.savemac.setToolTip("")
+        self.savemac.setObjectName("savemac")
+        self.labeloptions2 = QtWidgets.QLabel(self.taboptions)
+        self.labeloptions2.setGeometry(QtCore.QRect(0, 340, 800, 16))
+        self.labeloptions2.setMaximumSize(QtCore.QSize(800, 16))
+        font = QtGui.QFont()
+        font.setPointSize(6)
+        self.labeloptions2.setFont(font)
+        self.labeloptions2.setAlignment(QtCore.Qt.AlignCenter)
+        self.labeloptions2.setObjectName("labeloptions2")
+        self.labelbutton1 = QtWidgets.QLabel(self.taboptions)
+        self.labelbutton1.setGeometry(QtCore.QRect(100, 60, 311, 17))
+        font = QtGui.QFont()
+        font.setPointSize(11)
+        self.labelbutton1.setFont(font)
+        self.labelbutton1.setTextInteractionFlags(QtCore.Qt.NoTextInteraction)
+        self.labelbutton1.setObjectName("labelbutton1")
+        self.labelidpackets_3 = QtWidgets.QLabel(self.taboptions)
+        self.labelidpackets_3.setGeometry(QtCore.QRect(100, 110, 331, 20))
+        font = QtGui.QFont()
+        font.setPointSize(11)
+        self.labelidpackets_3.setFont(font)
+        self.labelidpackets_3.setTextInteractionFlags(QtCore.Qt.NoTextInteraction)
+        self.labelidpackets_3.setObjectName("labelidpackets_3")
+        self.tabset.addTab(self.taboptions, "")
+        self.labelidpackets = QtWidgets.QLabel(self.centralWidget)
+        self.labelidpackets.setGeometry(QtCore.QRect(430, 0, 71, 17))
+        font = QtGui.QFont()
+        font.setPointSize(8)
+        self.labelidpackets.setFont(font)
+        self.labelidpackets.setTextInteractionFlags(QtCore.Qt.NoTextInteraction)
+        self.labelidpackets.setObjectName("labelidpackets")
+        self.labelcounttime = QtWidgets.QLabel(self.centralWidget)
+        self.labelcounttime.setGeometry(QtCore.QRect(680, 0, 111, 20))
+        font = QtGui.QFont()
+        font.setPointSize(8)
+        self.labelcounttime.setFont(font)
+        self.labelcounttime.setText("")
+        self.labelcounttime.setTextInteractionFlags(QtCore.Qt.NoTextInteraction)
+        self.labelcounttime.setObjectName("labelcounttime")
+        self.labelidtme = QtWidgets.QLabel(self.centralWidget)
+        self.labelidtme.setGeometry(QtCore.QRect(610, 0, 71, 17))
+        font = QtGui.QFont()
+        font.setPointSize(8)
+        self.labelidtme.setFont(font)
+        self.labelidtme.setTextInteractionFlags(QtCore.Qt.NoTextInteraction)
+        self.labelidtme.setObjectName("labelidtme")
+        self.labelcountpackets = QtWidgets.QLabel(self.centralWidget)
+        self.labelcountpackets.setGeometry(QtCore.QRect(500, 0, 101, 17))
+        font = QtGui.QFont()
+        font.setPointSize(8)
+        self.labelcountpackets.setFont(font)
+        self.labelcountpackets.setText("")
+        self.labelcountpackets.setTextInteractionFlags(QtCore.Qt.NoTextInteraction)
+        self.labelcountpackets.setObjectName("labelcountpackets")
+        MainWindow.setCentralWidget(self.centralWidget)
+        self.statusBar = QtWidgets.QStatusBar(MainWindow)
+        self.statusBar.setObjectName("statusBar")
+        MainWindow.setStatusBar(self.statusBar)
+        self.menuBar = QtWidgets.QMenuBar(MainWindow)
+        self.menuBar.setGeometry(QtCore.QRect(0, 0, 790, 25))
+        self.menuBar.setObjectName("menuBar")
+        MainWindow.setMenuBar(self.menuBar)
+
+        self.retranslateUi(MainWindow)
+        self.tabset.setCurrentIndex(0)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "DamPi :  Network Packet Analyzer"))
+        MainWindow.setToolTip(_translate("MainWindow", "LAN Packet Analyzer to Detect SYN/ICMP Floods\n"
+"For Raspberry Pi [DamPi]"))
+        self.tabdataview.setToolTip(_translate("MainWindow", "<html><head/><body><p>Raw packet Data</p></body></html>"))
+        self.tabset.setTabText(self.tabset.indexOf(self.tabdataview), _translate("MainWindow", "Packet View"))
+        self.tabprotocol.setToolTip(_translate("MainWindow", "<html><head/><body><p>Packets by Protocol</p></body></html>"))
+        self.tableprotocol.setToolTip(_translate("MainWindow", "Packet Details by Protocol"))
+        self.tableprotocol.setSortingEnabled(True)
+        item = self.tableprotocol.verticalHeaderItem(0)
+        item.setText(_translate("MainWindow", "TCP SYN Session Initiation"))
+        item = self.tableprotocol.verticalHeaderItem(1)
+        item.setText(_translate("MainWindow", "HTTP/S Web Traffic"))
+        item = self.tableprotocol.verticalHeaderItem(2)
+        item.setText(_translate("MainWindow", "ICMP (Internet Control Management Protocol )"))
+        item = self.tableprotocol.verticalHeaderItem(3)
+        item.setText(_translate("MainWindow", "IGMP (Internet Group Message Protocol)"))
+        item = self.tableprotocol.verticalHeaderItem(4)
+        item.setText(_translate("MainWindow", "ARP (Address Resolution Protocol)"))
+        item = self.tableprotocol.verticalHeaderItem(5)
+        item.setText(_translate("MainWindow", "DNS (Domain Name Service)"))
+        item = self.tableprotocol.verticalHeaderItem(6)
+        item.setText(_translate("MainWindow", "DHCP (Dynamic Host Control Protocol)"))
+        item = self.tableprotocol.verticalHeaderItem(7)
+        item.setText(_translate("MainWindow", "Broadcasts"))
+        item = self.tableprotocol.verticalHeaderItem(8)
+        item.setText(_translate("MainWindow", "Total"))
+        item = self.tableprotocol.horizontalHeaderItem(1)
+        item.setText(_translate("MainWindow", "Packets"))
+        __sortingEnabled = self.tableprotocol.isSortingEnabled()
+        self.tableprotocol.setSortingEnabled(False)
+        self.tableprotocol.setSortingEnabled(__sortingEnabled)
+        self.tabset.setTabText(self.tabset.indexOf(self.tabprotocol), _translate("MainWindow", "Protocol View"))
+        self.tabmaclist.setToolTip(_translate("MainWindow", "<html><head/><body><p>MAC Address List</p></body></html>"))
+        self.tabset.setTabText(self.tabset.indexOf(self.tabmaclist), _translate("MainWindow", "MAC View"))
+        self.taboptions.setToolTip(_translate("MainWindow", "<html><head/><body><p>About, Help, and Options</p></body></html>"))
+        self.labeloptions1.setText(_translate("MainWindow", "LAN Packet Analyzer to Detect SYN/ICMP Floods\n"
+"For Raspberry Pi [DamPi]\n"
+"\n"
+"Welathanthri Vidu Karunaratne\n"
+"\n"
+"Submitted to the School of Computing in partial fulfilment for the requirements of \n"
+"Bachelors of Engineering in Computer Networks and Security (Hons)\n"
+"\n"
+"Supervised by: Ms. Neera Jeyamohan\n"
+"Asia Pacific Institute Information Technology\n"
+"Staffordshire University Colombo 3"))
+        self.saveprotocol.setText(_translate("MainWindow", "Save Protocol Data"))
+        self.savemac.setText(_translate("MainWindow", "Save MAC address Data"))
+        self.labeloptions2.setText(_translate("MainWindow", "::TCP packet walks in to a shop and says “I want an apple juice”, server asks “you want an apple juice?” and TCP packet says “yes,an apple juice”.\n"
+"That good old Apple talk. There are some UDP jokes, but you wouldn\'t get it::"))
+        self.labelbutton1.setText(_translate("MainWindow", "Save the MAC View page to a Text File :"))
+        self.labelidpackets_3.setText(_translate("MainWindow", "Save the Protocol View page to a Text File :"))
+        self.tabset.setTabText(self.tabset.indexOf(self.taboptions), _translate("MainWindow", "Options"))
+        self.labelidpackets.setText(_translate("MainWindow", "Total packets:"))
+        self.labelidtme.setText(_translate("MainWindow", "Time elapsed:"))
+
+#Dam Pi GUI code
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+from __future__ import print_function
+import os, sys
+import time
+import socket
+import _thread
+# mainwindow from QtCreator
+import dampi_ui
+# PyQt5 GUI
+import PyQt5
+from PyQt5.QtWidgets import *
+from PyQt5.QtCore import *
+from PyQt5.QtGui import *
+from struct import *
+
+NAME = 'DamPi'
+VERSION = 'u.1.1'
+VERSIONSTR = '{} v. {}'.format(NAME, VERSION)
+#-----------------Variables-------------------------
+# global variable declaration for all the counters
+packet_total = 0
+broadcast_packet_total = 0
+dhcp_packet_total = 0
+dns_packet_total = 0
+arp_packet_total = 0
+icmp_packet_total = 0
+igmp_packet_total = 0
+syn_packet_total = 0
+http_packet_total = 0
+    
+total_time = 0
+    
+total_packet_pps = 0
+broadcast_packet_pps = 0
+dhcp_packet_pps = 0
+dns_packet_pps = 0
+arp_packet_pps = 0
+icmp_packet_pps = 0
+igmp_packet_pps = 0
+syn_packet_pps = 0
+http_packet_pps = 0
+
+list_total = []
+list_broadcast = []
+list_dhcp = []
+list_dns = []
+list_arp = []
+list_icmp = []
+list_igmp = []
+list_syn = []
+list_http = []
+list_mac = []
+
+rawdata = False
+#-------------------------------GUI class---------------------------------
+
+ 
+# class for Raspberry Pi GUI
+class MainWindow(QMainWindow,dampi_ui.Ui_MainWindow):
+
+    # access variables inside of the UI's file
+    def __init__(self):
+        super(self.__class__, self).__init__()
+        self.setupUi(self) 
+        self.saveprotocol.clicked.connect(self.save_protocol_data)
+        self.savemac.clicked.connect(self.save_mac_data)
+        #self.textpackets = QtWidgets.QTextEdit(self)
+
+    # Write all the protocol packet details to text file
+    def save_protocol_data (self):
+        global total_time
+        global packet_total
+        global broadcast_packet_total
+        global dhcp_packet_total
+        global dns_packet_total
+        global arp_packet_total
+        global icmp_packet_total
+        global igmp_packet_total
+        global syn_packet_total
+        global http_packet_total
+
+        global total_packet_pps
+        global broadcast_packet_pps
+        global dhcp_packet_pps
+        global dns_packet_pps
+        global arp_packet_pps
+        global icmp_packet_pps
+        global igmp_packet_pps
+        global syn_packet_pps
+        global http_packet_pps
+
+   
+        with open('DamPi_Save_protocol_packets_.txt', 'w') as f:
+            f.write("Total Packets \t" + str(packet_total) + "\t" + str(total_packet_pps) + 
+              "\nBroadcast Packets \t" + str(broadcast_packet_total) + "\t" + str(broadcast_packet_pps) + 
+              "\nDHCP Packets \t" + str(dhcp_packet_total) + "\t" + str(dhcp_packet_pps) + 
+              "\nDNS Packets \t" + str(dns_packet_total) + "\t" + str(dns_packet_pps) + 
+              "\nARP Packets \t" + str(arp_packet_total) + "\t" + str(arp_packet_pps) + 
+              "\nICMP Packets \t" + str(icmp_packet_total) + "\t" + str(icmp_packet_pps) + 
+              "\nIGMP Packets \t" + str(igmp_packet_total) + "\t" + str(igmp_packet_pps) + 
+              "\nSYN Packets \t" + str(syn_packet_total) + "\t" + str(syn_packet_pps) + 
+              "\nHTTP Packets \t" + str(http_packet_total) + "\t" + str(http_packet_pps))
+        
+
+    # Write all the protocol packet details to text file
+    def save_mac_data (self):
+        global list_total
+        global list_broadcast
+        global list_dhcp
+        global list_dns 
+        global list_arp
+        global list_icmp
+        global list_igmp
+        global list_syn
+        global list_http
+        global list_mac
+      
+        with open('DamPi_Save_mac_list_.txt', 'w') as f:
+            lists=[list_mac,list_http,list_syn,list_igmp,list_icmp,
+                   list_arp,list_dns,list_dhcp,list_broadcast,list_total]
+            f.write("MAC\tHTTP\tSYN\tIGMP\tICMP\tARP\tDNS\tDHCP\tBroadcast\tTotal\n")
+            for x in zip(*lists):
+                f.write("{0}\t{1}\t{2}\t{3}\t{4}\t{5}\t{6}\t{7}\t{8}\t{9}\n".format(*x))          
+         
+
+
+#-------------------------------GUI main window---------------------------
+
+def main():
+    global rawdata
+    
+    # new app instance
+    app = QApplication(sys.argv)
+    form = MainWindow()
+    form.show()
+    
+    # stop immediate script exit
+    #sys.exit(app.exec_())
+   
+#-------------------------------packet capture-----------------------------
+def socket_read(self):
+    #  AF_PACKET RAW SOCKET type with GGP protocol to read ethernet frames
+    try:
+        s = socket.socket(socket.AF_PACKET, socket.SOCK_RAW , socket.ntohs(0x0003))
+    except socket.error as msg:
+        msg = list(messages)
+        print("Socket cant be created !!!\nError code: ", str(messages[0]))
+        print("\nMessage: ", messages[1])
+        print("\nDamPi will now exit.")
+        sys.exit()
+        
+    #Abort operation by user
+    try:
+        ret = packet_loop(s)
+    except KeyboardInterrupt:
+        print("\n Aborted by user. \n DamPi 0.6.3 \n")
+    #-----FOR CLI FILE WRITING------------------
+        save_protocol_data2 ()
+        save_mac_data2 ()
+        ret = 1
+    return ret
+
+
+def packet_loop(s):
+        # capture packets
+    while True:
+        packet = s.recvfrom(65565)
+        
+        # packet string from tuple
+        packet = packet[0]
+
+        # ethernet header bit size set for multiple use
+        ethernet_length = 14
+        ethernet_header = packet[:ethernet_length]
+        
+        # Unpack ethernet header 
+        eth = unpack('!6s6sH', ethernet_header)
+        ethernet_protocol = socket.ntohs(eth[2])
+
+        #Count packets
+        packet_counter(mac_address(packet[0:6]), 'mac')
+
+        ethernetinfo = ["Destination MAC: {}".format(mac_address(packet[0:6]))," Source MAC: {}".format(mac_address(packet[6:12])),
+                        " Protocol: {}".format(ethernet_protocol)]
+        
+        print(" ".join(ethernetinfo))
+        
+        
+
+        # Check for broadcasts
+        if mac_address(packet[0:6]) == "FF:FF:FF:FF:FF:FF":
+            packet_counter('FF:FF:FF:FF:FF:FF','broadcast')
+
+        # Read ARP packets 0x806
+        if ethernet_protocol == 1544:
+            # Count ARP packets
+            packet_counter(mac_address(packet[0:6]),'arp')
+        
+            # Read ARP header 28 bytes
+            arp_header = packet[ethernet_length:28 + ethernet_length]
+        
+            # Unpack header by information
+            arph = unpack('!2s2s1s1s2s6s4s6s4s', arp_header)
+            if arph[1] == 8:
+                ip_version= 4
+            
+            source_mac = arph[5]	
+            source_ip = socket.inet_ntoa(arph[6])
+            destination_mac = arph[7]
+            destination_ip = socket.inet_ntoa(arph[8])
+    
+            arpinfo = ["\nSource IP : {}".format(source_ip)," Destination IP : {}".format(destination_ip),
+                       "\nSource MAC: {}".format(mac_address(source_mac))," Destination MAC: {}".format(mac_address(destination_mac))]
+            print(" ".join(arpinfo))        
+              
+        # Read IP packets = 8 = 0x800
+        elif ethernet_protocol == 8:
+            # Read IP header 20 bytes
+            ip_header = packet[ethernet_length:20 + ethernet_length]
+
+            # Unpack header by information
+            ip_header = unpack('!BBHHHBBH4s4s', ip_header)
+
+            ip_version_ihl = ip_header[0]
+            ip_version = ip_version_ihl >> 4
+            ihl = ip_version_ihl & 0xF
+
+            ip_header_length = ihl * 4
+            protocol = ip_header[6]
+            source_ip = socket.inet_ntoa(ip_header[8])
+            destination_ip = socket.inet_ntoa(ip_header[9])
+
+            ipinfo = ["\nSource IP: {}".format(source_ip)," Destination IP: {}".format(destination_ip),
+                      "\nIP v: {}".format(ip_version)," IP Header Length: {}".format(ihl)," Protocol: {}".format(protocol)]
+            print(" ".join(ipinfo))
+
+            # TCP protocol header 20 bytes
+            if protocol == 6:
+                t = ip_header_length + ethernet_length
+                tcp_header = packet[t:t + 20]
+
+                # Unpack header by information
+                tcph = unpack('!HHLLBBHHH', tcp_header)
+
+                source_port = tcph[0]
+                dest_port = tcph[1]
+                sequence = tcph[2]
+                acknowledgement = tcph[3]
+                doff_reserved = tcph[4]
+                #calculate header length
+                tcp_header_length = doff_reserved >> 4
+                # Read flags to identify SYN good - rst psh
+                tcp_flags = tcph[5]
+                tcp_fin = tcp_flags >> 0 & 0xF
+                tcp_syn = tcp_flags >> 1 & 0xF
+                tcp_rst = tcp_flags >> 2 & 0xF
+                tcp_psh = tcp_flags >> 3 & 0xF
+                tcp_ack = tcp_flags >> 4 & 0xF
+                tcp_urg = tcp_flags >> 5 & 0xF
+            
+                #Count TCP SYN and HTTP,HTTPS packets	
+                if (tcp_syn == 1 and tcp_ack == 0):
+                    packet_counter(mac_address(packet[0:6]),'syn')   	
+                elif source_port == 80 or source_port == 443:
+                    packet_counter(mac_address(packet[0:6]),'http')
+                                        
+                tcpinfo = ["Source Port: {}".format(source_port)," Dest. Port: {}".format(dest_port),
+                           "\nSequence Num: {}".format(sequence),"Acknowledgement Num: {}".format(acknowledgement),
+                           "\nFIN Flag : {}".format(tcp_fin),"SYN Flag : {}".format(tcp_syn),"RST Flag : {}".format(tcp_rst),
+                           "\nPSH Flag : {}".format(tcp_psh),"ACK Flag : {}".format(tcp_ack),"URG Flag : {}".format(tcp_urg)]
+                print(" ".join(tcpinfo))
+                header_total = ethernet_length + ip_header_length + tcp_header_length * 4
+                data_size = len(packet) - header_total
+
+                # packet data extraction
+                data = rawdata_decode(packet[header_total:])
+
+                print("Data: {}".format(data))
+
+            # UDP protocol header 8 bytes
+            elif protocol == 17:
+                u = ip_header_length + ethernet_length
+                udph_length = 8
+                udp_header = packet[u:u + 8]
+            
+                # Unpack header by information
+                udph = unpack('!HHHH', udp_header)
+                source_port = udph[0]
+                destination_port = udph[1]
+                length = udph[2]
+
+                #Count UDP DNS and DHCP packets	
+                if source_port == 53:
+                    packet_counter(mac_address(packet[0:6]),'dns')   	
+                elif (source_port == 67 or source_port == 68):
+                    packet_counter(mac_address(packet[0:6]),'dhcp')
+                
+                udpinfo = ["Source Port: {}".format(source_port),"Dest. Port: {}".format(destination_port),
+                           "\nLength: {}".format(length)]
+                print(" ".join(udpinfo))
+
+                header_total = ethernet_length + ip_header_length + udph_length
+                data_size = len(packet) - header_total
+
+                # packet data extraction
+                data = rawdata_decode(packet[header_total:])
+
+                print("Data: {}".format(data))
+                        
+            # ICMP Packets
+            elif protocol == 1:
+                # Count ICMP packets
+                packet_counter(mac_address(packet[0:6]),'icmp')
+
+                # ICMP protocol header 4 bytes
+                u = ip_header_length + ethernet_length
+                icmph_length = 4
+                icmp_header = packet[u:u + 4]
+                                
+                # Unpack header by information
+                icmph = unpack('!BBH', icmp_header)
+
+                icmp_type = icmph[0]
+                code = icmph[1]
+            
+                icmpinfo = ["Type: {}".format(icmp_type),"Code: {}".format(code)]
+                print(" ".join(icmpinfo))
+
+                header_total = ethernet_length + ip_header_length + icmph_length
+                data_size = len(packet) - header_total
+
+                # packet data extraction
+                data = rawdata_decode(packet[header_total:])
+
+                print("Data: {}".format(data))
+                                
+            # IGMP Packets
+            elif protocol == 2:
+                # Count IGMP packets
+                packet_counter(mac_address(packet[0:6]),'igmp')
+            
+                # IGMP protocol header 4 bytes
+                u = ip_header_length + ethernet_length
+                igmph_length = 4
+                igmp_header = packet[u:u + 4]
+                #IGMP packet counter	
+                igmp_packet_total+=1
+
+                # Unpack header by information
+                igmph = unpack('!BBH', igmp_header)
+
+                igmp_type = igmph[0]
+                code = igmph[1]
+
+                igmpinfo = ["Type: {}".format(igmp_type),"Code: {}".format(code)]
+                print(" ".join(igmpinfo))
+
+                header_total = ethernet_length + ip_header_length + icmph_length
+                data_size = len(packet) - header_total
+
+                # packet data extraction
+                data = rawdata_decode(packet[header_total:])
+
+                print("Data: {}".format(data))
+
+            # Any other TCP protocol packet
+            else:
+                print("Other IP Protocol packet")
+        
+       
+#-------------------------------Helper functions---------------------------
+
+    
+#Calculate packets per second for all protocols
+def calculate_pps (): 
+
+    packet_total_old = 0
+    broadcast_packet_total_old = 0
+    dhcp_packet_total_old = 0
+    dns_packet_total_old = 0
+    arp_packet_total_old = 0
+    icmp_packet_total_old = 0
+    igmp_packet_total_old = 0
+    syn_packet_total_old = 0
+    http_packet_total_old = 0
+    
+    global total_time
+    
+    global packet_total
+    global broadcast_packet_total
+    global dhcp_packet_total
+    global dns_packet_total
+    global arp_packet_total
+    global icmp_packet_total
+    global igmp_packet_total
+    global syn_packet_total
+    global http_packet_total
+    
+    global packet_total_pps
+    global broadcast_packet_pps
+    global dhcp_packet_pps
+    global dns_packet_pps
+    global arp_packet_pps
+    global icmp_packet_pps
+    global igmp_packet_pps
+    global syn_packet_pps
+    global http_packet_pps
+        
+    threading.Timer(0.5, calculate_pps).start ()
+    
+    total_time += 0.5
+    print ("hello")
+    packet_total_pps = (packet_total - packet_total_old)*2
+    broadcast_packet_pps = (broadcast_packet_total - broadcast_packet_total_old)*2
+    dhcp_packet_pps = (dhcp_packet_total - dhcp_packet_total_old)*2
+    dns_packet_pps = (dns_packet_total - dns_packet_total_old)*2
+    arp_packet_pps = (arp_packet_total - arp_packet_total_old)*2
+    icmp_packet_pps = (icmp_packet_total - icmp_packet_total_old)*2
+    igmp_packet_pps = (igmp_packet_total - igmp_packet_total_old)*2
+    syn_packet_pps = (syn_packet_total - syn_packet_total_old)*2
+    http_packet_pps = (http_packet_total - http_packet_total_old)*2
+                
+    packet_total_old = packet_total
+    broadcast_packet_total_old = broadcast_packet_total
+    dhcp_packet_total_old = dhcp_packet_total
+    dns_packet_total_old = dns_packet_total
+    arp_packet_total_old = arp_packet_total
+    icmp_packet_total_old = icmp_packet_total
+    igmp_packet_total_old = igmp_packet_total
+    syn_packet_total_old = syn_packet_total
+    http_packet_total_old = http_packet_total
+    
+    calculate_pps ()
+
+# Adding packets to counters
+def packet_counter(mac_address,protocol_id):
+    global list_mac
+    global list_syn
+    global list_icmp
+    global list_igmp
+    global list_dns
+    global list_dhcp
+    global list_http
+    global list_arp
+    global list_broadcast
+    global list_total
+
+    global packet_total
+    global broadcast_packet_total
+    global dhcp_packet_total
+    global dns_packet_total
+    global arp_packet_total
+    global icmp_packet_total
+    global igmp_packet_total
+    global syn_packet_total
+    global http_packet_total
+    
+    list_id = 0
+    
+    if protocol_id == 'mac':
+        packet_total +=1
+        #MAC is missing ,add MAC, add to total
+        if mac_address not in list_mac :   
+            list_mac.append(mac_address)
+            list_id = len(list_mac)+1
+            list_syn.append(0)
+            list_icmp.append(0)
+            list_igmp.append(0)
+            list_dns.append(0)
+            list_dhcp.append(0)
+            list_http.append(0)
+            list_arp.append(0)
+            list_broadcast.append(0)
+            list_total.append(1)
+            
+        else:
+            #MAC is present , add to total
+            list_id = list_mac.index(mac_address)
+            list_total[list_id] += 1
+
+    #Add specific packet totals
+    elif protocol_id =='syn':
+        list_id = list_mac.index(mac_address)
+        list_syn[list_id] += 1
+        syn_packet_total += 1
+    elif protocol_id =='icmp':
+        list_id = list_mac.index(mac_address)
+        list_icmp[list_id] += 1
+        icmp_packet_total += 1
+    elif protocol_id =='igmp':
+        list_id = list_mac.index(mac_address)
+        list_igmp[list_id] += 1
+        igmp_packet_total += 1
+    elif protocol_id =='dns':
+        list_id = list_mac.index(mac_address)
+        list_dns[list_id] += 1
+        dns_packet_total += 1
+    elif protocol_id =='dhcp':
+        list_id = list_mac.index(mac_address)
+        list_dhcp[list_id] += 1
+        dhcp_packet_total += 1
+    elif protocol_id =='http':
+        list_id = list_mac.index(mac_address)
+        list_http[list_id] += 1
+        http_packet_total += 1
+    elif protocol_id =='arp':
+        list_id = list_mac.index(mac_address)
+        list_arp[list_id] += 1
+        arp_packet_total += 1
+    elif protocol_id =='broadcast':
+        list_id = list_mac.index(mac_address)
+        list_broadcast[list_id] += 1
+        broadcast_packet_total += 1
+
+    return 0
+    
+       
+#Readable time function    
+def hms_time(S):
+    M, S = divmod(S, 60)
+    H, M = divmod(M, 60)
+    return '%02d:%02d:%02d' % (H, M, S)
+    _thread.start_new_thread(hms_time, (S))
+    
+#Python 3 raw data conversion
+def rawdata_decode(r):
+    if rawdata:
+        return repr(r)
+    if sys.version_info.major == 2:
+        return r
+    return r.decode('ascii', errors='replace')
+    _thread.start_new_thread(rawdata_decode, (r))
+    
+#Python 3 MAC address decoding 
+def mac_address(m):
+    a = (m[i] for i in range(6))
+    return '{:2x}:{:2x}:{:2x}:{:2x}:{:2x}:{:2x}'.format(*a)
+    _thread.start_new_thread(mac_address, (m))
+    
+
+#Python 2 MAC address decoding - crash avoidance
+def mac_address_2(m):
+    a = tuple(ord(m[i]) for i in range(6))
+    return '%.2x:%.2x:%.2x:%.2x:%.2x:%.2x' % a
+    _thread.start_new_thread(mac_address_2, (m))
+#-------------------------remove below-------------------------------------------
+
+# Write all the protocol packet details to text file
+def save_protocol_data2 ():
+    global total_time
+    global packet_total
+    global broadcast_packet_total
+    global dhcp_packet_total
+    global dns_packet_total
+    global arp_packet_total
+    global icmp_packet_total
+    global igmp_packet_total
+    global syn_packet_total
+    global http_packet_total
+
+    global total_packet_pps
+    global broadcast_packet_pps
+    global dhcp_packet_pps
+    global dns_packet_pps
+    global arp_packet_pps
+    global icmp_packet_pps
+    global igmp_packet_pps
+    global syn_packet_pps
+    global http_packet_pps
+  
+    with open('DamPi_Save_protocol_packets_.txt', 'w') as f:
+        f.write("Total Packets \t" + str(packet_total) + "\t" + str(total_packet_pps) + 
+          "\nBroadcast Packets \t" + str(broadcast_packet_total) + "\t" + str(broadcast_packet_pps) + 
+          "\nDHCP Packets \t" + str(dhcp_packet_total) + "\t" + str(dhcp_packet_pps) + 
+          "\nDNS Packets \t" + str(dns_packet_total) + "\t" + str(dns_packet_pps) + 
+          "\nARP Packets \t" + str(arp_packet_total) + "\t" + str(arp_packet_pps) + 
+          "\nICMP Packets \t" + str(icmp_packet_total) + "\t" + str(icmp_packet_pps) + 
+          "\nIGMP Packets \t" + str(igmp_packet_total) + "\t" + str(igmp_packet_pps) + 
+          "\nSYN Packets \t" + str(syn_packet_total) + "\t" + str(syn_packet_pps) + 
+          "\nHTTP Packets \t" + str(http_packet_total) + "\t" + str(http_packet_pps))
+    
+
+# Write all the protocol packet details to text file
+def save_mac_data2 ():
+    global list_total
+    global list_broadcast
+    global list_dhcp
+    global list_dns 
+    global list_arp
+    global list_icmp
+    global list_igmp
+    global list_syn
+    global list_http
+    global list_mac
+  
+    with open('DamPi_Save_mac_list_.txt', 'w') as f:
+        lists=[list_mac,list_http,list_syn,list_igmp,list_icmp,
+               list_arp,list_dns,list_dhcp,list_broadcast,list_total]
+        f.write("MAC\tHTTP\tSYN\tIGMP\tICMP\tARP\tDNS\tDHCP\tBroadcast\tTotal\n")
+        for x in zip(*lists):
+            f.write("{0}\t{1}\t{2}\t{3}\t{4}\t{5}\t{6}\t{7}\t{8}\t{9}\n".format(*x))          
+     
+    
+#Python 2 and Python 3 code compatibility select
+if __name__ == '__main__':
+    if sys.version_info.major == 2:
+        mac_address = mac_address_2
+
+    mainret = main()
+    sys.exit(mainret)
+
